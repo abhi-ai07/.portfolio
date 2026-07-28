@@ -257,17 +257,7 @@ export default function Experience() {
 
             </p>
 
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: .96 }}
-              className="mt-10 inline-flex items-center gap-3 rounded-full bg-[#E5283C] px-8 py-4 font-semibold text-white"
-            >
-
-              View My Projects
-
-              <FiArrowRight size={20} />
-
-            </motion.button>
+            
 
           </div>
 
