@@ -38,7 +38,7 @@ export const SOCIALS = {
   github: 'https://github.com/abhi-ai07',
   linkedin: 'https://www.linkedin.com/in/abhishek-kashyap-878b383a6/',
   instagram: 'https://www.instagram.com/abhi.az07',
-  resume: 'https://drive.google.com/file/d/1T86JGWXhrTWhay6FqgY2TVQmCCPZt4O0/view?usp=drivesdk',
+  resume: '/resume.pdf',
 }
 
 export const ABOUT = {
