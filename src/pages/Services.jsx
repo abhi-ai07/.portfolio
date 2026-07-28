@@ -6,8 +6,7 @@ import {
   FiFilm,
   FiSmartphone,
   FiTrendingUp,
-  FiArrowRight,
-} from "react-icons/fi";
+} from "react-icons/fi"; 
 
 const services = [
   {
@@ -163,18 +162,7 @@ export default function Services() {
 
                 </p>
 
-                <motion.button
-                  whileHover={{
-                    x: 6,
-                  }}
-                  className="mt-8 inline-flex items-center gap-2 font-medium text-[#E5283C]"
-                >
-
-                  Learn More
-
-                  <FiArrowRight size={18} />
-
-                </motion.button>
+                
 
               </div>
 

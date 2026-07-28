@@ -48,22 +48,43 @@ export default function Footer() {
             </a>
           </div>
 
-          <div className="grid xs:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
             {CONTACT_CARDS.map(({ icon: Icon, label, value, href }) => (
               <a
                 key={label}
                 href={href}
                 target={href.startsWith('http') ? '_blank' : undefined}
                 rel="noreferrer"
-                className="flex items-center gap-3 rounded-xl card-outline-accent px-4 py-3 hover:shadow-glow-soft transition-shadow duration-300"
+                className="
+                    group
+                    flex items-center justify-between
+                    rounded-xl card-outline-accent
+                    px-4 py-4
+                    hover:shadow-glow-soft
+                    transition-all duration-300
+                    "
               >
-                <span className="grid place-items-center w-9 h-9 rounded-lg bg-accent/15 text-accent shrink-0">
-                  <Icon className="text-base" />
-                </span>
-                <div className="min-w-0">
-                  <p className="text-ink-dim text-[11px] uppercase tracking-wide">{label}</p>
-                  <p className="text-ink text-sm truncate">{value}</p>
-                </div>
+                <div className="flex items-center gap-3 min-w-0">
+
+                    <span className="grid place-items-center w-10 h-10 rounded-xl bg-accent/15 text-accent shrink-0">
+                      <Icon className="text-lg" />
+                    </span>
+
+                    <div className="min-w-0">
+
+                      <p className="text-[11px] uppercase tracking-wider text-ink-dim">
+                        {label}
+                      </p>
+
+                      <p className="text-sm text-ink break-all md:truncate">
+                        {value}
+                      </p>
+
+                    </div>
+
+                  </div>
+
+                  <HiArrowRight className="hidden md:block text-accent opacity-0 group-hover:opacity-100 transition" />
               </a>
             ))}
           </div>
