@@ -73,6 +73,39 @@ const projects = [
   },
 
   {
+  id: "03",
+  title: "Edify",
+  subtitle: "YouTube Channel",
+  description:
+    "Edited engaging YouTube content with motion graphics, smooth transitions, color grading and storytelling for a professional viewing experience.",
+  image: edifyImg,
+
+  tech: ["Capcut", "Alight Motion"],
+  features: [
+    "Motion Graphics",
+    "Color Grading",
+    "Smooth Transitions",
+    "YouTube Content",
+  ],
+},
+
+{
+  id: "04",
+  title: "Samvaad",
+  subtitle: "Video Editing Project",
+  description:
+    "Produced a cinematic event highlight video featuring dynamic cuts, synchronized music, text animations and professional color grading.",
+    image: samvaadImg,
+  tech: ["Alight Motion", "After Effects"],
+  features: [
+    "Cinematic Cuts",
+    "Text Animation",
+    "Music Sync",
+    "Event Highlights",
+  ],
+},
+
+{
     id: "05",
 
     title: "Portfolio",
@@ -97,40 +130,6 @@ const projects = [
       "Performance",
     ],
   },
-
-  {
-  id: "03",
-  title: "Edify",
-  subtitle: "YouTube Channel",
-  description:
-    "Edited engaging YouTube content with motion graphics, smooth transitions, color grading and storytelling for a professional viewing experience.",
-  liveLink: "https://www.youtube.com/@Edify_English_Hub/shorts",
-  image: edifyImg,
-
-  tech: ["Capcut", "Alight Motion"],
-  features: [
-    "Motion Graphics",
-    "Color Grading",
-    "Smooth Transitions",
-    "YouTube Content",
-  ],
-},
-{
-  id: "04",
-  title: "Samvaad",
-  subtitle: "Video Editing Project",
-  description:
-    "Produced a cinematic event highlight video featuring dynamic cuts, synchronized music, text animations and professional color grading.",
-  liveLink: "https://www.instagram.com/samvaad_mun/reels/",
-    image: samvaadImg,
-  tech: ["Alight Motion", "After Effects"],
-  features: [
-    "Cinematic Cuts",
-    "Text Animation",
-    "Music Sync",
-    "Event Highlights",
-  ],
-},
 ];
 
 export default function Projects() {
@@ -544,15 +543,15 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
     </div>
 
     <div className="mt-12">
-    <a
-      href={projects[3].liveLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 rounded-full bg-[#E5283C] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#c61f32]"
-    >
-      ▶ Watch on YouTube
-    </a>
-  </div>
+  <a
+    href="https://www.youtube.com/@Edify_English_Hub/shorts"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block rounded-full bg-[#E5283C] px-6 py-3 text-sm font-medium text-white hover:bg-[#c61f32] transition-all"
+  >
+    ▶ Watch on YouTube
+  </a>
+</div>
   </div>
 </motion.div>
 
@@ -595,15 +594,15 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
     </div>
 
       <div className="mt-12">
-    <a
-      href={projects[4].liveLink}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 rounded-full bg-[#E5283C] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#c61f32]"
-    >
-      📷 View on Instagram
-    </a>
-  </div>
+  <a
+    href="https://www.instagram.com/samvaad_mun/reels/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block rounded-full bg-[#E5283C] px-6 py-3 text-sm font-medium text-white hover:bg-[#c61f32] transition-all"
+  >
+    📷 View on Instagram
+  </a>
+</div>
   </div>
 
   <div className="order-1 lg:order-2">
