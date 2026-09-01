@@ -12,6 +12,9 @@ import dynamoHero from "../assets/images/dynamo/hero.png";
 import dynamoPlans from "../assets/images/dynamo/plans.png";
 import dynamoRating from "../assets/images/dynamo/rating.png";
 import dynamoWhy from "../assets/images/dynamo/why.png";
+
+import edifyImg from "../assets/images/edify/edify-youtube.jpg";
+import samvaadImg from "../assets/images/samvaad/samvaad-mun.jpg";
 const projects = [
   {
     id: "01",
@@ -94,6 +97,37 @@ const projects = [
       "Performance",
     ],
   },
+
+  {
+  id: "04",
+  title: "Edify",
+  subtitle: "YouTube Channel",
+  description:
+    "Edited engaging YouTube content with motion graphics, smooth transitions, color grading and storytelling for a professional viewing experience.",
+  image: edifyImg,
+  tech: ["Capcut", "Alight Motion"],
+  features: [
+    "Motion Graphics",
+    "Color Grading",
+    "Smooth Transitions",
+    "YouTube Content",
+  ],
+},
+{
+  id: "05",
+  title: "Samvaad",
+  subtitle: "Video Editing Project",
+  description:
+    "Produced a cinematic event highlight video featuring dynamic cuts, synchronized music, text animations and professional color grading.",
+  image: samvaadImg,
+  tech: ["Alight Motion", "After Effects"],
+  features: [
+    "Cinematic Cuts",
+    "Text Animation",
+    "Music Sync",
+    "Event Highlights",
+  ],
+},
 ];
 
 export default function Projects() {
@@ -458,6 +492,102 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
 
 </div>
 
+</motion.div>
+
+{/* ================= EDIFY ================= */}
+
+<motion.div
+  initial={{ opacity: 0, y: 80 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="grid items-center gap-16 lg:grid-cols-2"
+>
+  <div>
+    <img
+      src={edifyImg}
+      alt="Edify"
+      className="w-full rounded-[34px] border border-white/10 object-cover"
+    />
+  </div>
+
+  <div>
+    <span className="text-[80px] font-black leading-none text-white/5">04</span>
+
+    <p className="mt-2 text-sm uppercase tracking-[0.35em] text-[#E5283C]">
+      Video Editing Project
+    </p>
+
+    <h2 className="mt-4 text-5xl font-bold text-white">Edify</h2>
+
+    <p className="mt-8 leading-8 text-zinc-400">
+      Edited promotional and educational videos with smooth transitions, motion graphics,
+      color grading and platform-optimized storytelling for a professional viewing experience.
+    </p>
+
+    <div className="mt-10">
+      <h4 className="mb-5 text-sm uppercase tracking-[0.3em] text-zinc-500">
+        Editing Highlights
+      </h4>
+
+      <div className="grid grid-cols-2 gap-4">
+        {["Motion Graphics","Color Grading","Smooth Transitions","Short-form Content"].map((item)=>(
+          <div key={item} className="glass flex items-center gap-3 rounded-xl px-5 py-4">
+            <div className="h-2.5 w-2.5 rounded-full bg-[#E5283C]" />
+            <span className="text-zinc-300">{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</motion.div>
+
+{/* ================= SAMVAAD ================= */}
+
+<motion.div
+  initial={{ opacity: 0, y: 80 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  viewport={{ once: true }}
+  className="grid items-center gap-16 lg:grid-cols-2"
+>
+  <div className="order-2 lg:order-1">
+    <span className="text-[80px] font-black leading-none text-white/5">05</span>
+
+    <p className="mt-2 text-sm uppercase tracking-[0.35em] text-[#E5283C]">
+      Video Editing Project
+    </p>
+
+    <h2 className="mt-4 text-5xl font-bold text-white">Samvaad</h2>
+
+    <p className="mt-8 leading-8 text-zinc-400">
+      Produced a cinematic event highlight video featuring dynamic cuts,
+      synchronized music, text animations and professional color grading.
+    </p>
+
+    <div className="mt-10">
+      <h4 className="mb-5 text-sm uppercase tracking-[0.3em] text-zinc-500">
+        Editing Highlights
+      </h4>
+
+      <div className="grid grid-cols-2 gap-4">
+        {["Cinematic Cuts","Text Animation","Music Sync","Event Highlights"].map((item)=>(
+          <div key={item} className="glass flex items-center gap-3 rounded-xl px-5 py-4">
+            <div className="h-2.5 w-2.5 rounded-full bg-[#E5283C]" />
+            <span className="text-zinc-300">{item}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div className="order-1 lg:order-2">
+    <img
+      src={samvaadImg}
+      alt="Samvaad"
+      className="w-full rounded-[34px] border border-white/10 object-cover"
+    />
+  </div>
 </motion.div>
 
 
