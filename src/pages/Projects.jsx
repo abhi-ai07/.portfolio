@@ -213,7 +213,7 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
 
             <h2 className="text-5xl font-bold text-white">
 
-              03+
+              05+
 
             </h2>
 
@@ -539,6 +539,23 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
         ))}
       </div>
     </div>
+
+    <div className="mt-10">
+      <h4 className="mb-5 text-sm uppercase tracking-[0.3em] text-zinc-500">
+        Tools Used
+      </h4>
+
+      <div className="flex flex-wrap gap-3">
+        {projects[3].tech.map((item) => (
+          <span
+            key={item}
+            className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-zinc-300"
+          >
+            {item}
+          </span>
+        ))}
+      </div>
+    </div>
   </div>
 </motion.div>
 
@@ -576,6 +593,23 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
             <div className="h-2.5 w-2.5 rounded-full bg-[#E5283C]" />
             <span className="text-zinc-300">{item}</span>
           </div>
+        ))}
+      </div>
+    </div>
+
+    <div className="mt-10">
+      <h4 className="mb-5 text-sm uppercase tracking-[0.3em] text-zinc-500">
+        Tools Used
+      </h4>
+
+      <div className="flex flex-wrap gap-3">
+        {projects[4].tech.map((item) => (
+          <span
+            key={item}
+            className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-zinc-300"
+          >
+            {item}
+          </span>
         ))}
       </div>
     </div>
