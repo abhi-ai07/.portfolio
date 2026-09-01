@@ -393,7 +393,7 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
 
   {/* CONTENT */}
 
-  <div className="order-2 lg:order-1">
+  <div className="order-1 lg:order-1">
 
     <span className="text-[80px] font-black leading-none text-white/5">
       {projects[1].id}
@@ -454,7 +454,7 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
 
   {/* IMAGE */}
 
-  <div className="space-y-4">
+  <div className="order-2 lg:order-2 space-y-4">
 
   {/* Main Image */}
 
@@ -514,7 +514,7 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
   </div>
 
   <div>
-    <span className="text-[80px] font-black leading-none text-white/5">04</span>
+    <span className="text-[80px] font-black leading-none text-white/5">03</span>
 
     <p className="mt-2 text-sm uppercase tracking-[0.35em] text-[#E5283C]">
       Video Editing Project
@@ -565,7 +565,7 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
   className="grid items-center gap-16 lg:grid-cols-2"
 >
   <div className="order-2 lg:order-1">
-    <span className="text-[80px] font-black leading-none text-white/5">05</span>
+    <span className="text-[80px] font-black leading-none text-white/5">04</span>
 
     <p className="mt-2 text-sm uppercase tracking-[0.35em] text-[#E5283C]">
       Video Editing Project
@@ -659,19 +659,19 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
   <div>
 
     <span className="text-[80px] font-black leading-none text-white/5">
-      {projects[2].id}
+      {projects[4].id}
     </span>
 
     <p className="mt-2 text-sm uppercase tracking-[0.35em] text-[#E5283C]">
-      {projects[2].subtitle}
+      {projects[4].subtitle}
     </p>
 
     <h2 className="mt-4 text-5xl font-bold text-white">
-      {projects[2].title}
+      {projects[4].title}
     </h2>
 
     <p className="mt-8 leading-8 text-zinc-400">
-      {projects[2].description}
+      {projects[4].description}
     </p>
 
     <div className="mt-10">
@@ -680,7 +680,7 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
       </h4>
 
       <div className="flex flex-wrap gap-3">
-        {projects[2].tech.map((item) => (
+        {projects[4].tech.map((item) => (
           <span
             key={item}
             className="rounded-full border border-white/10 bg-white/5 px-5 py-2 text-sm text-zinc-300 transition hover:border-[#E5283C]/50 hover:bg-[#E5283C]/10"
