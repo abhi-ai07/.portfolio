@@ -73,7 +73,7 @@ const projects = [
   },
 
   {
-    id: "03",
+    id: "05",
 
     title: "Portfolio",
 
@@ -99,12 +99,14 @@ const projects = [
   },
 
   {
-  id: "04",
+  id: "03",
   title: "Edify",
   subtitle: "YouTube Channel",
   description:
     "Edited engaging YouTube content with motion graphics, smooth transitions, color grading and storytelling for a professional viewing experience.",
+  liveLink: "https://www.youtube.com/@Edify_English_Hub/shorts",
   image: edifyImg,
+
   tech: ["Capcut", "Alight Motion"],
   features: [
     "Motion Graphics",
@@ -114,12 +116,13 @@ const projects = [
   ],
 },
 {
-  id: "05",
+  id: "04",
   title: "Samvaad",
   subtitle: "Video Editing Project",
   description:
     "Produced a cinematic event highlight video featuring dynamic cuts, synchronized music, text animations and professional color grading.",
-  image: samvaadImg,
+  liveLink: "https://www.instagram.com/samvaad_mun/reels/",
+    image: samvaadImg,
   tech: ["Alight Motion", "After Effects"],
   features: [
     "Cinematic Cuts",
@@ -539,6 +542,17 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
         ))}
       </div>
     </div>
+
+    <div className="mt-12">
+    <a
+      href={projects[3].liveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 rounded-full bg-[#E5283C] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#c61f32]"
+    >
+      ▶ Watch on YouTube
+    </a>
+  </div>
   </div>
 </motion.div>
 
@@ -579,6 +593,17 @@ const [activeDynamoImage, setActiveDynamoImage] = useState(dynamoImages[0]);
         ))}
       </div>
     </div>
+
+      <div className="mt-12">
+    <a
+      href={projects[4].liveLink}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-flex items-center gap-2 rounded-full bg-[#E5283C] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#c61f32]"
+    >
+      📷 View on Instagram
+    </a>
+  </div>
   </div>
 
   <div className="order-1 lg:order-2">
