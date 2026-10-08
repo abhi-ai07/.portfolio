@@ -43,7 +43,7 @@ export const SOCIALS = {
 
 export const ABOUT = {
   education: 'BCA, Graphic Era Hill University',
-  cgpa: '7.9',
+  cgpa: '7.59',
   duration: '2024 - 2027',
   languages: 'Hindi, English',
   location: 'Dehradun, India',
@@ -60,6 +60,7 @@ export const SKILLS = [
   { label: 'CSS', core: false },
   { label: 'Video Editing', core: false },
   { label: 'UI/UX Design', core: false },
+  { label: 'Git/GitHub', core: false },
 ]
 
 export const EXPERIENCE = [
