@@ -13,7 +13,7 @@ const experiences = [
     icon: <FiCode size={22} />,
     role: "Full Stack Web Developer",
     company: "Freelance",
-    duration: "2024 - Present",
+    duration: "2025 - Present",
     description:
       "Developing modern, responsive and scalable web applications using React, Node.js, Express and MongoDB with a focus on premium UI and clean architecture.",
   },
@@ -21,7 +21,7 @@ const experiences = [
     icon: <FiGlobe size={22} />,
     role: "WordPress Developer",
     company: "Client Projects",
-    duration: "2024 - Present",
+    duration: "2025 - Present",
     description:
       "Built business websites, landing pages and SEO optimized WordPress solutions with custom UI and responsive layouts.",
   },
@@ -29,7 +29,7 @@ const experiences = [
     icon: <FiFilm size={22} />,
     role: "Video Editor",
     company: "YouTube & Events",
-    duration: "2023 - Present",
+    duration: "2024 - Present",
     description:
       "Edited educational videos, Instagram reels and promotional content with smooth transitions, motion graphics and storytelling.",
   },
@@ -53,7 +53,7 @@ const achievements = [
     title: "Hours of Learning",
   },
   {
-    number: "10+",
+    number: "2+",
     title: "Happy Clients",
   },
 ];
