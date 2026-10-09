@@ -10,6 +10,14 @@ import {
 
 const experiences = [
   {
+    icon: <FiFilm size={22} />,
+    role: "Video Editor",
+    company: "YouTube & Events",
+    duration: "2024 - Present",
+    description:
+      "Edited educational videos, Instagram reels and promotional content with smooth transitions, motion graphics and storytelling.",
+  },
+  {
     icon: <FiCode size={22} />,
     role: "Full Stack Web Developer",
     company: "Freelance",
@@ -24,14 +32,6 @@ const experiences = [
     duration: "2025 - Present",
     description:
       "Built business websites, landing pages and SEO optimized WordPress solutions with custom UI and responsive layouts.",
-  },
-  {
-    icon: <FiFilm size={22} />,
-    role: "Video Editor",
-    company: "YouTube & Events",
-    duration: "2024 - Present",
-    description:
-      "Edited educational videos, Instagram reels and promotional content with smooth transitions, motion graphics and storytelling.",
   },
   {
     icon: <FiAward size={22} />,

@@ -51,7 +51,7 @@ const education = [
   {
     title: "Full Stack Web Development",
     place: "Self Learning & Real Projects",
-    year: "2024 - Present",
+    year: "2025 - Present",
   },
 ];
 
